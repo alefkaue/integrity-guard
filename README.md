@@ -1,5 +1,7 @@
 # integrity-guard
 
+[![Tests](https://github.com/alefkaue/integrity-guard/actions/workflows/tests.yml/badge.svg)](https://github.com/alefkaue/integrity-guard/actions/workflows/tests.yml)
+
 Monitoramento de integridade de arquivos com SHA-256. Projeto independente de portfólio voltado a **Blue Team / resposta a incidentes**.
 
 Cria um inventário SHA-256 e compara arquivos adicionados, alterados e removidos.
@@ -18,6 +20,8 @@ python integrity_guard.py check examples/site baseline.json
 ```
 
 As ferramentas escrevem JSON em stdout. Use `--help` para consultar opções. Exemplos são sintéticos e não contêm dados reais.
+
+A primeira comparação retorna `{"added": [], "removed": [], "modified": []}` e código **0**. Altere o conteúdo de `examples/site/index.html` e repita `check`: `modified` passa a conter `index.html`, com código **1**. O inventário existente nunca é sobrescrito pelo comando `baseline`.
 
 ## Testes
 
