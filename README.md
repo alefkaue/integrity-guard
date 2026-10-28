@@ -1,5 +1,7 @@
 # integrity-guard
 
+**Área do portfólio:** [Cybersecurity](https://github.com/alefkaue#cybersecurity) · **Contexto:** Projeto pessoal
+
 [![Tests](https://github.com/alefkaue/integrity-guard/actions/workflows/tests.yml/badge.svg)](https://github.com/alefkaue/integrity-guard/actions/workflows/tests.yml)
 
 Monitoramento de integridade de arquivos com SHA-256. Projeto independente de portfólio voltado a **Blue Team / resposta a incidentes**.
